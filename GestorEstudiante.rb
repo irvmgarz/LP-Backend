@@ -8,7 +8,7 @@ class GestorEstudiante
     def initialize(data)
         @estudiantes = data
     end
-    
+
     def write_data_to_csv
         CSV.open(ARCHIVO_ESTUDIANTES, 'w') do |csv|
           csv << ['nombre', 'correo', 'nombre_usuario', 'contrasena']
@@ -23,9 +23,11 @@ class GestorEstudiante
         end
         @estudiantes = data
     end
+
 end
 
 gestor = GestorEstudiante.new([])
+
 
 get '/api/users' do
     content_type :json

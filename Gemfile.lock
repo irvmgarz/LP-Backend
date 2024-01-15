@@ -1,4 +1,5 @@
 GEM
+  remote: https://rubygems.org/
   specs:
     base64 (0.1.1)
     mustermann (3.0.0)
@@ -16,7 +17,8 @@ GEM
     tilt (2.3.0)
 
 PLATFORMS
-  x64-mingw-ucrt
+  arm64-darwin-23
+  x64-unknown
 
 DEPENDENCIES
   sinatra
